@@ -10,18 +10,17 @@ import { UpdateAuthorFormComponent } from './forms/update-author-form/update-aut
 @Component({
   selector: 'app-author',
   templateUrl: './author.component.html',
-  styleUrls: ['./author.component.scss']
+  styleUrls: ['./author.component.scss'],
 })
 export class AuthorComponent implements OnInit {
-
   public booksList: Book[] = [];
   public authorList: Author[] = [];
 
   constructor(
     private booksService: BooksService,
     private authorsService: AuthorsService,
-    private modalService: NgbModal,
-  ) { }
+    private modalService: NgbModal
+  ) {}
 
   ngOnInit(): void {
     this.booksService.list().subscribe((data) => {
@@ -32,7 +31,7 @@ export class AuthorComponent implements OnInit {
     });
   }
 
-  addNew(){
+  addNew() {
     const modalRef = this.modalService.open(CreateAuthorFormComponent);
 
     modalRef.result
@@ -44,7 +43,7 @@ export class AuthorComponent implements OnInit {
       });
   }
 
-  updateAuthor(id: string){
+  updateAuthor(id: string) {
     const modalRef = this.modalService.open(UpdateAuthorFormComponent);
     modalRef.componentInstance.id = id;
     modalRef.result
@@ -54,8 +53,9 @@ export class AuthorComponent implements OnInit {
       .catch((e) => {
         console.log('modal fechado');
       });
-    }
+  }
 
-  removeAuthor(id: string){}
-
+  removeAuthor(id: string) {
+    this.authorsService.remover(id).subscribe((a) => {});
+  }
 }
