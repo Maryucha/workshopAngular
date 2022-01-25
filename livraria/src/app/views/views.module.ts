@@ -1,7 +1,6 @@
+import { ViewsRoutes } from './views-routing';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { ViewsRoutingModule } from './views-routing.module';
 import { AuthorComponent } from './components/author/author.component';
 import { BookComponent } from './components/book/book.component';
 import { ShopComponent } from './components/shop/shop.component';
@@ -17,7 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     CommonModule,
-    ViewsRoutingModule,
+    ViewsRoutes,
     BrowserAnimationsModule,
     SharedModule
   ],

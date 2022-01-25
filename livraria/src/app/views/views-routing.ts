@@ -1,4 +1,3 @@
-import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthorComponent } from './components/author/author.component';
 import { BookComponent } from './components/book/book.component';
@@ -19,8 +18,4 @@ const routes: Routes = [
    }
 ];
 
-@NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
-})
-export class ViewsRoutingModule { }
+export const ViewsRoutes = RouterModule.forChild(routes);

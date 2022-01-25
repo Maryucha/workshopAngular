@@ -5,7 +5,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ErrorComponent } from './components/error/error.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,8 +15,17 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  exports: [HeaderComponent, FooterComponent]
+  exports: [
+    HeaderComponent,
+    FooterComponent,
+    ErrorComponent,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
+  ]
 })
-export class SharedModule { }
+export class SharedModule {}

@@ -7,7 +7,7 @@ import { Author, AuthorCreate } from '../models/Author.model';
 @Injectable({
   providedIn: 'root'
 })
-export class AuthorService {
+export class AuthorsService {
 
   public controller = 'authors';
   public endpoint = environment.apiFakeUrl;

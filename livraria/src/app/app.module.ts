@@ -12,14 +12,18 @@ import { ViewsModule } from './views/views.module';
     AppComponent
   ],
   imports: [
+    SharedModule,
+    ViewsModule,
     BrowserModule,
     AppRoutingModule,
-    SharedModule,
     NgbModule,
-    BrowserAnimationsModule,
-    ViewsModule,
+    BrowserAnimationsModule
+  ],
+  exports: [
+
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

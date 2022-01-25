@@ -7,7 +7,7 @@ import { Book, BookCreate } from '../models/Book.model';
 @Injectable({
   providedIn: 'root'
 })
-export class BookService {
+export class BooksService {
 
   public controller = 'books';
   public endpoint = environment.apiFakeUrl;
