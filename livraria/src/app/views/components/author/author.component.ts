@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Author } from 'src/app/core/models/Author.model';
+import { Book } from 'src/app/core/models/Book.model';
 
 @Component({
   selector: 'app-author',
@@ -6,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./author.component.scss']
 })
 export class AuthorComponent implements OnInit {
+
+  public booksList: Book[] = [];
+  public authorList: Author[] = [];
 
   constructor() { }
 

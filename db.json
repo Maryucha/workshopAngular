@@ -1,0 +1,38 @@
+{
+  "authors": [
+    {
+      "id": "1111",
+      "email": "mym@certi.org.br",
+      "firstName": "Maryucha",
+      "lastName": "Mariani",
+      "createdAt": "21/06/88",
+      "updatedAt": ""
+    },
+    {
+      "id": "2222",
+      "email": "mph@certi.org.br",
+      "firstName": "Marina",
+      "lastName": "Dardene",
+      "createdAt": "05/12/94",
+      "updatedAt": ""
+    }
+  ],
+  "books": [
+    {
+      "id": "111xxx",
+      "name": "CLEAN CODE",
+      "author_uuid": "1111",
+      "createdAt": "15/10/13",
+      "updatedAt": "",
+      "author_name": "Maryucha"
+    },
+    {
+      "id": "111xxx",
+      "name": "CLEAN ARCHITECTURE",
+      "author_uuid": "2222",
+      "createdAt": "15/10/13",
+      "updatedAt": "",
+      "author_name": "Marina"
+    }
+  ]
+}
