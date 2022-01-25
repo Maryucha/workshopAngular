@@ -20,9 +20,9 @@ Ele foi elaborado por: [Maryucha M Mariani]
 ## Interface
 
 --TELA DE LISTAGEM
-![Tela de listagem](https://github.com/Maryucha/ProjetoTesteEstagio/blob/master/imagens/proposta%20listagem.jpg?raw=true)
+![Tela de listagem](https://github.com/Maryucha/workshopAngular/blob/main/imagens/Autores.png?raw=true)
 --TELA DE FORMULÁRIO
-![Modal de Formulário](https://github.com/Maryucha/ProjetoTesteEstagio/blob/master/imagens/proposta%20formulario.jpg?raw=true)
+![Modal de Formulário](https://github.com/Maryucha/workshopAngular/blob/main/imagens/Modal.png?raw=true)
 ### Tecnologias utilizadas
 Aqui temos listados algumas das tecnologias usadas no projeto.
 
