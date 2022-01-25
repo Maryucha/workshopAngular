@@ -17,4 +17,10 @@ export class AuthorComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  addNew(){}
+
+  updateAuthor(id: string){}
+
+  removeAuthor(id: string){}
+
 }

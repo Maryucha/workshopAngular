@@ -17,4 +17,10 @@ export class BookComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  addNew(){}
+
+  updateBook(id: string){}
+
+  removeBook(id: string){}
+
 }

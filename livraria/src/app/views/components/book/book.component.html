@@ -1,1 +1,35 @@
-<p>book works!</p>
+<div class="col-md-12">
+    <h3 class="text-center m-3">Tabela de Livros</h3>
+      <table class="table" *ngIf="booksList">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Book name</th>
+            <th scope="col">Date criation</th>
+            <th scope="col">Author name</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let book of booksList">
+          <tr>
+            <td>{{book.id}}</td>
+            <td>{{book.name}}</td>
+            <td>{{book.createdAt}}</td>
+            <ng-container *ngFor="let author of authorList">
+              <td *ngIf="book.author_uuid == author.id">
+                {{author.firstName}}
+              </td>
+            </ng-container>
+            <td>
+              <button class="btn btn-primary mx-2" (click)="updateBook(book.id)">
+                Editar</button>
+              <button class="btn btn-warning mr-2" (click)="removeBook(book.id)">
+                Excluir</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+  
+  <button class="btn btn-lg btn-outline-info m-3" (click) = "addNew()">Novo</button>
+  
