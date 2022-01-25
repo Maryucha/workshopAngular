@@ -5,6 +5,8 @@ import { ViewsRoutingModule } from './views-routing.module';
 import { AuthorComponent } from './components/author/author.component';
 import { BookComponent } from './components/book/book.component';
 import { ShopComponent } from './components/shop/shop.component';
+import { SharedModule } from '../shared/shared.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { ShopComponent } from './components/shop/shop.component';
   ],
   imports: [
     CommonModule,
-    ViewsRoutingModule
+    ViewsRoutingModule,
+    BrowserAnimationsModule,
+    SharedModule
   ],
   exports: [
     AuthorComponent,BookComponent,ShopComponent
