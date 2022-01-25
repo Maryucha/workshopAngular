@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Author } from 'src/app/core/models/Author.model';
 import { Book } from 'src/app/core/models/Book.model';
 import { AuthorsService } from 'src/app/core/services/author.service';
@@ -17,6 +18,7 @@ export class BookComponent implements OnInit {
   constructor(
     private booksService: BooksService,
     private authorsService: AuthorsService,
+    private modalService: NgbModal,
   ) { }
 
   ngOnInit(): void {

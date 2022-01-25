@@ -6,13 +6,21 @@ import { BookComponent } from './components/book/book.component';
 import { ShopComponent } from './components/shop/shop.component';
 import { SharedModule } from '../shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UpdateAuthorFormComponent } from './components/author/forms/update-author-form/update-author-form.component';
+import { CreateAuthorFormComponent } from './components/author/forms/create-author-form/create-author-form.component';
+import { CreateBookFormComponent } from './components/book/forms/create-book-form/create-book-form.component';
+import { UpdateBookFormComponent } from './components/book/forms/update-book-form/update-book-form.component';
 
 
 @NgModule({
   declarations: [
     AuthorComponent,
     BookComponent,
-    ShopComponent
+    ShopComponent,
+    UpdateAuthorFormComponent,
+    CreateAuthorFormComponent,
+    CreateBookFormComponent,
+    UpdateBookFormComponent
   ],
   imports: [
     CommonModule,
