@@ -1,1 +1,27 @@
-<p>update-author-form works!</p>
+<div class="modal-header">
+    <h4 class="modal-title"> Editar </h4>
+    <button type="button" class="close" aria-label="Fechar" (click)=" activeModal.dismiss ('Cross click')">
+    </button>
+  </div>
+  <div class="modal-body">
+    <form [formGroup]="formAuthor" (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <input class="form-control" type="text" name="fisrtName" 
+          formControlName="firstNameControl" required>
+      </div>
+      <div class="mb-3">
+        <input class="form-control" type="text" name="lastName" 
+          formControlName="lastNameControl" required>
+      </div>
+      <div class="mb-3">
+        <input class="form-control" type="email" name="email"
+          formControlName="emailControl">
+      </div>
+    </form>
+  </div>
+  <div class=" modal-footer">
+    <button class="btn btn-success" [disabled]="!formAuthor.valid" (click)="onSubmit()">
+      Enviar formulário
+    </button>
+  </div>
+  

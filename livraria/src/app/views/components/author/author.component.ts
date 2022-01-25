@@ -5,6 +5,7 @@ import { Book } from 'src/app/core/models/Book.model';
 import { AuthorsService } from 'src/app/core/services/author.service';
 import { BooksService } from 'src/app/core/services/book.service';
 import { CreateAuthorFormComponent } from './forms/create-author-form/create-author-form.component';
+import { UpdateAuthorFormComponent } from './forms/update-author-form/update-author-form.component';
 
 @Component({
   selector: 'app-author',
@@ -43,7 +44,17 @@ export class AuthorComponent implements OnInit {
       });
   }
 
-  updateAuthor(id: string){}
+  updateAuthor(id: string){
+    const modalRef = this.modalService.open(UpdateAuthorFormComponent);
+    modalRef.componentInstance.id = id;
+    modalRef.result
+      .then((result) => {
+        this.authorsService.update(id, result).subscribe((a) => {});
+      })
+      .catch((e) => {
+        console.log('modal fechado');
+      });
+    }
 
   removeAuthor(id: string){}
 
