@@ -14,7 +14,7 @@ Ele foi elaborado por: [Maryucha M Mariani]
 
 [LINK DO REPOSITÓRIO](https://github.com/Maryucha/workshopAngular)
 
-[LINK DO TUTORIAL](https://docs.google.com/document/d/13ns9Lhvnsg6ierk5DgWqNXC1sm9ZdQYK)
+[LINK DO TUTORIAL](https://drive.google.com/drive/folders/1CEfYRudkEGqGWhaURneqozhX8dcAR99r)
 
 
 ## Interface
